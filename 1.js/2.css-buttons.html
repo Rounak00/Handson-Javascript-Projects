@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin:0;
+            padding: 0;
+            background-color:rgb(34, 47, 80) ;
+        }
+        #container{
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            margin: 10%;
+        }
+        .btn{
+            margin:2%;
+        }
+        .btns{
+            font-weight: bold;
+            padding: 25px 70px;
+            border:none;
+            background: none;
+            text-decoration: none;
+            color:white;
+            border-radius: 20px;
+
+        }
+        .btns:hover{
+            cursor: pointer;
+        }
+        /* button 1 */
+        #btn-1{
+          background:linear-gradient(to right,rgb(255, 111, 255),rgb(180, 115, 255));
+        }
+        #btn-1:hover{
+            background:linear-gradient(to left,rgb(255, 111, 255),rgb(180, 115, 255));
+        }
+
+        /* button 2 glass effect */
+        #btn-2{
+            position:relative;
+            background-color: rgba(255,255,255,0.05);
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+            border-top: 1px solid rgba(255,255,255,0.05);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        #btn-2:hover{
+            letter-spacing: 5px;
+        }
+        
+        /* button 3 glowing-button */
+        #btn-3 {
+             position: relative;
+             -webkit-box-reflect:below linear-gradient(transparent);
+        }
+        #btn-3::before{
+            position: absolute;
+            content:'';
+            top:0;
+            left:0;
+            height:100%;
+            width:100%;
+            background:linear-gradient(45deg, #fb0094, #00f,#0f0,#ff0,#f00,#fb0094, #00f,#0f0,#ff0,#f00);
+            background-size: 400%;
+            opacity: 0;
+            transition:0.5s;
+            animation:animate 20s linear infinite ;
+        }
+        #btn-3::after{
+            position: absolute;
+            content:'';
+            top:0;
+            left:0;
+            height:100%;
+            width:100%;
+            background:linear-gradient(45deg, #fb0094, #00f,#0f0,#ff0,#f00,#fb0094, #00f,#0f0,#ff0,#f00);
+            background-size: 400%;
+            opacity:0;
+            transition:0.5s;
+            animation:animate 20s linear infinite ;
+        }
+        #btn-3:hover::before,::after{
+            opacity:1;
+        }
+        #btn-3 span{
+            position:absolute;
+            display:block;
+            text-align: center;
+            top:1px;
+            left:1px;
+            right:1px;
+            bottom: 1px;
+            background:rgb(47, 65, 109);
+            z-index: 1;
+        }
+        @keyframes animate{
+             0%{
+              background-position: 0 0;
+             }
+             50%{
+                background-position: 300% 0;
+             }
+             100%{
+                background-position: 0 0;
+             }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+            <div class="btn"><button class="btns" id="btn-1"> Press</button> </div>
+            <div class="btn"><button class="btns" id="btn-2"> Press</button> </div>
+            <div class="btn"><button class="btns" id="btn-3"><span>Press</span></button></div>
+            <div class="btn"><button class="btns" id="btn-4">Press </button></div>
+            <div class="btn"><button class="btns" id="btn-5">Press </button></div>
+    </div>
+
+</body>
+</html>
