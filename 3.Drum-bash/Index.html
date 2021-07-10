@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Drum Bash</title>
+</head>
+<body>
+    <h1 class="animated_rainbow">Let's Make Your Own Beat</h1>
+   <main>
+    <div class="container">
+        <div class="key" data-key="65">
+            <kbd>A</kbd>
+            <span>TOM 1</span>
+        </div>
+        
+        <div class="key" data-key="83">
+             <kbd>S</kbd>
+            <span>TOM 2</span>
+        </div>
+        
+        <div class="key" data-key="68">
+             <kbd>D</kbd>
+            <span>TAMA</span>
+        </div>
+       
+        <div class="key" data-key="70">
+             <kbd>F</kbd>
+            <span>CYMDAL</span>
+        </div>
+        
+        <div class="key" data-key="71">
+             <kbd>G</kbd>
+            <span>KICK</span>
+        </div>
+        
+        <div class="key" data-key="72">
+             <kbd>H</kbd>
+            <span>STOOL</span>
+        </div>
+        
+        <div class="key" data-key="74">
+             <kbd>J</kbd>
+            <span>SONOR</span>
+        </div>
+        
+        <div class="key" data-key="75">
+             <kbd>K</kbd>
+            <span>PICOLO</span>
+        </div>
+    </div>
+    <audio data-key="65" src="./SRC/tom1.wav"></audio>
+    <audio data-key="83" src="./SRC/tom2.wav"></audio>
+    <audio data-key="68" src="./SRC/tama.wav"></audio>
+    <audio data-key="70" src="./SRC/cymbal.wav"></audio>
+    <audio data-key="71" src="./SRC/kick.wav"></audio>
+    <audio data-key="72" src="./SRC/stool.wav"></audio>
+    <audio data-key="74" src="./SRC/sonor.wav"></audio>
+    <audio data-key="75" src="./SRC/picolo.wav"></audio>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
