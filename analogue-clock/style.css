@@ -8,27 +8,26 @@ body{
    
 }
 
-.container{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height:100vh;
-    width:100vw;
-   
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.frame{
-    position:relative;
- background-image: url(./Images/clock.png);
- background-size: contain;
- background-position: center;
- background-repeat: no-repeat;
- height:80vh;
- width:40vw;
-border-radius: 50%;
-box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
-              15px 15px 15px rgba(0, 0, 0, 0.1),
-              inset -10px -10px 10px rgba(255, 255, 255, 0.2),
-              inset 10px 10px 10px rgba(0, 0, 0, 0.1);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(./Images/clock.png);
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+    15px 15px 15px rgba(0, 0, 0, 0.1),
+    inset -10px -10px 10px rgba(255, 255, 255, 0.2),
+    inset 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 #hour, #minute, #second{
     position : absolute;
