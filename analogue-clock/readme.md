@@ -1,1 +1,1 @@
-![alt text](https://github.com/Rounak00/Web-Projects/blob/main/analogue-clock/readme/analogue%20clock.png)
+![alt text](https://github.com/Rounak00/Web-Projects/blob/main/clock/readme/analogue%20clock.png)
