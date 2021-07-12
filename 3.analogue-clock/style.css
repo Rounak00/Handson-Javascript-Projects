@@ -9,13 +9,14 @@ body{
 }
 
 .container {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+ 
 }
 .frame {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -31,7 +32,7 @@ body{
 }
 #hour, #minute, #second{
     position : absolute;
-    
+    transform-origin:  bottom;
 }
 #hour{
     top: 29.8%;
@@ -40,7 +41,6 @@ body{
     width:1.8%;
     border-radius: 30%;
     background-color: rgba(163, 18, 18,00.8);
-    transform-origin: bottom;
    
 }
 #second{
@@ -50,7 +50,7 @@ body{
     width:1%;
     border-radius: 30%;
     background-color: rgba(44, 44, 168, 00.8);
-    transform-origin:  bottom;
+    
 
 }  
  #minute{
@@ -60,5 +60,4 @@ body{
     width:1.5%;
     border-radius: 30%;
     background-color: rgba(6, 134, 6, 00.8);
-    transform-origin: bottom;
 }
