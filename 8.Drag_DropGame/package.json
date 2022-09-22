@@ -1,0 +1,12 @@
+{
+  "name": "8.drag_dropgame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel serve index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
